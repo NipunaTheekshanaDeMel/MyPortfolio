@@ -1,0 +1,174 @@
+body{
+    overflow-x: hidden;
+}
+body>#lineart{
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    transform: scale(1.1) translateY(-10em);
+    left: 0;
+    z-index: 9;
+
+}
+#home{
+    width: 98.2vw;
+    height: 98vh;
+    background-color: #000000;
+    margin: 0;
+}
+header>div>img{
+    position: absolute;
+    left: 8vw;
+    top: 2vh;
+    z-index: 1;
+}
+#head>ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 1vh;
+    right: 8vw;
+    text-decoration: none; !important;
+}
+
+#head>ul>li{
+    margin-right: 50px;
+    font-family: 'Darker Grotesque', sans-serif;
+    text-decoration: none; !important;
+    color: white; !important;
+    z-index: 99999;
+}
+#head>ul>li>a{
+    font-family: 'Darker Grotesque', sans-serif;
+    text-decoration: none; !important;
+    color: white; !important;
+    font-size: 18px;
+    font-weight: 550;
+}
+header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 8vh;
+    background-color: black;
+}
+#home>#leftside>img{
+    position: absolute;
+    right: 11vw;
+    top: 7vh;
+    z-index: 10;
+}
+#home>#leftside>#line{
+    position: absolute;
+    top: 70.8vh;
+    left: 9.5vw;
+}
+#home>#leftside>h5{
+    position: absolute;
+    top: 47vh;
+    left: 9.8vw;
+    font-family: 'K2D', sans-serif;
+    font-size: 25px;
+    color: #F49A10;
+}
+#home>#leftside>#n{
+    position: absolute;
+    top: 60vh;
+    left: 9.6vw;
+    font-size: 38px;
+    font-family: 'Laila', sans-serif;
+    font-weight: 600;
+    color: #D9D9D9;
+}
+#home>#leftside>#t{
+    position: absolute;
+    top: 59.3vh;
+    left: 19.5vw;
+    font-size: 47px;
+    font-family: lalezar;
+    color: #A4A0A0;
+}
+#home>#leftside>h1{
+    position: absolute;
+    top: -42vh;
+    left: 9vw;
+    font-size: 310px;
+    font-family: lalezar;
+    letter-spacing: 30px;
+    color: #0D0D0D;
+    z-index: 9;
+}
+
+#home>#leftside>p{
+    position: absolute;
+    top: 70vh;
+    left: 9.6vw;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 23px;
+    color: #787878;
+
+}
+#home>#leftside>span{
+    position: absolute;
+    top: 79vh;
+    left: 9.6vw;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 23px;
+    color: #787878;
+}
+#home>#leftside>h4{
+    position: absolute;
+    top: 72.5vh;
+    left: 21.3vw;
+    font-size: 30px;
+    font-family: 'Days One', sans-serif;
+    font-weight: 800;
+    color: #F49A10;
+}
+#rightside>button{
+    position: absolute;
+    top: 87vh;
+    padding: 8px 16px;
+    background-color: rgba(244, 154, 16, 0.43);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    left: 9.6vw;
+    z-index: 11;
+}
+#rightside>p{
+    position: absolute;
+    top: 32.5vh;
+    right: 7vw;
+    transform: rotate(90deg);
+    font-family: 'Cuprum', sans-serif;
+    letter-spacing: 4.5px;
+    font-weight: bold;
+    color: white;
+}
+#rightside>a{
+    position: absolute;
+
+}
+#rightside>ul{
+    list-style: none;
+    position: absolute;
+    top: 70vh;
+    right: 9.7vw;
+}
+#rightside>ul>li{
+    padding: 0.7vh;
+}
+#rightside>img{
+    position: absolute;
+    right: 10.8vw;
+    top: 49vh;
+}
