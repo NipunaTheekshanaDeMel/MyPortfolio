@@ -2,161 +2,285 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
     <title>Nipuna Theekshana</title>
-    <link rel="icon" type="image/x-icon" href="asserts/falcon.ico">
+    <link rel="icon" type="image/x-icon" href="asserts/img/falcon.ico">
 
     <meta name="keywords" content="Nipuna,Theekshana,Nipuna Theekshana,Ui/Ux,web,graphics">
-    <meta name="description" content="#1 Software Engineering institute in Sri Lanka">
+    <meta name="description" content="This portfolio website showcases the work and expertise of Nipuna Theekshana,
+     a Web Designer/Ui/Ux Designer from Sri Lanka. The website provides information about the developer, including skills,
+     completed projects, and contact details. It also highlights the services offered, such as Graphic Design,
+     Web Development, and UI/UX Design. Visitors can explore the latest projects and assignments completed by the
+     developer.">
     <meta name="author" content="Nipuna Theekshana">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
 
     <link rel="stylesheet" href="asserts/css/home.css">
+    <link rel="stylesheet" href="asserts/fontawesome/css/all.min.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=K2D&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Laila&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap">
-
-
-
-
-
 </head>
 <body>
-<img id="lineart" src="../asserts/Line art.webp" alt="">
-<header id="head">
-    <div>
-        <img src="../asserts/logo.webp" alt="logo" width="70" id="logo">
+<div class="load">
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
-    <ul>
-            <li><a href="#logo">Home</a></li>
+
+    <div class="loading-text">
+        <span class="loading-text-words">L</span>
+        <span class="loading-text-words">O</span>
+        <span class="loading-text-words">A</span>
+        <span class="loading-text-words">D</span>
+        <span class="loading-text-words">I</span>
+        <span class="loading-text-words">N</span>
+        <span class="loading-text-words">G</span>
+    </div>
+
+</div>
+<div id="particles-js"></div>
+<!--<img id="lineart" src="../asserts/img/lineart.png" alt="">-->
+<header>
+    <div id="logont">
+        <img src="../asserts/img/logo.webp" alt="logo" width="70" id="logo">
+    </div>
+    <nav>
+        <ul id="slidemenu">
+            <li><a class="active" href="#logo">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="projects.html#projects">Projects</a></li>
             <li><a href="projects.html#assignments">Assignments</a></li>
             <li><a href="contact_Me.html#contactme">Contact Me</a></li>
-
-    </ul>
-</header>
-<main id="home">
-    <section id="leftside">
-        <h1>HELLO</h1>
-        <h5>I'm</h5>
-        <span id="n">Nipuna</span>
-        <span id="t">Theekshana</span>
-        <img id="line" src="../asserts/NT line.webp" width="370" alt="">
-        <p>With a passion of creating visual </p>
-        <span>representations as</span>
-        <h4>Ui/Ux Designer | Web Designer | Graphic Designer</h4>
-        <img src="../asserts/Nipuna_Theekshana.webp" width="400" alt="pic">
-    </section>
-    <section id="rightside">
-        <p>FOLLOW ME</p>
-        <img src="../asserts/Follow me line.webp" width="3" alt="">
-        <ul>
-            <li><a href="www.facebook.com"><img src="../asserts/fb_icon.webp" width="18" alt="Facebook"></a><br></li>
-            <li><a href="www.whatsapp.com"><img src="../asserts/whatsapp_icon.webp" width="18" alt="Whatsapp"></a><br></li>
-            <li><a href="www.instergram.com"><img src="../asserts/instra_icon.webp" width="18" alt="Instregram"></a><br></li>
-            <li><a href="www.behance.com"><img src="../asserts/be_icon.webp" width="18" alt="Behance"></a><br></li>
-            <li><a href="www.linkdlin.com"><img src="../asserts/in_icon.webp" width="18" alt="Linkdin"></a><br><br></li>
+            <i class="fa-solid fa-xmark" style="color: #f49a10;" onclick="closemenu()"></i>
         </ul>
-        <button><img src="../asserts/Raise up.webp" width="20" alt="">&nbsp;Hire Me</button>
-    </section>
-</main>
+        <i class="fa-solid fa-bars" style="color: #f49a10;" onclick="openmenu()"></i>
+    </nav>
+</header>
+<section class="container">
+    <img src="../asserts/img/Nipuna_Theekshana.webp" width="400" alt="pic">
+    <h1>HELLO</h1>
+    <h5>I'm</h5>
+    <span id="n">Nipuna</span>
+    <span id="t">Theekshana</span>
+    <img id="horizontalline" src="../asserts/img/horizontalLine.png" width="370" alt="">
+    <p>With a passion of creating visual </p>
+    <span>representations as</span>
+    <div class="animated-text">
+        <h4></h4>
+    </div>
 
-<main>
-    <section>
-        <h2 id="about">About</h2>
-        <img src="../asserts/Aboutme.webp" alt="Nipuna Theekshana" width="210">
-    </section>
-    <section>
-        <button>BIO</button>
-        <button>EDUCATION</button>
-        <button>EXPERIENCE</button>
-        <p>Welcome to my website! I'm Nipuna Theekshana, a multi-talented designer
-            specializingz in UI/UX, web design, and graphic design.</p><br>
 
-           <p> With a keen eye for aesthetics and a dedication to creating intuitive user experiences, I strive
-            to craft visually captivating designs that leave a lasting impact. Whether it's designing
-            seamless interfaces, developing responsive websites, or creating compelling
-            graphics, I bring a blend of creativity and technical expertise to every project. With
-            a collaborative approach and a commitment to excellence,</p><br>
+    <h6>FOLLOW ME</h6>
+    <img id="verticalline" src="../asserts/img/Follow me line.webp" width="3" alt="">
+    <ul>
+        <li><a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="../asserts/img/fb_icon.webp" width="18" alt="Facebook"></a><br></li>
+        <li><a href="www.whatsapp.com"><img src="../asserts/img/whatsapp_icon.webp" width="18" alt="Whatsapp"></a><br></li>
+        <li><a href="www.instergram.com"><img src="../asserts/img/instra_icon.webp" width="18" alt="Instregram"></a><br>
+        </li>
+        <li><a href="www.behance.com"><img src="../asserts/img/be_icon.webp" width="18" alt="Behance"></a><br></li>
+        <li><a href="www.linkdlin.com"><img src="../asserts/img/in_icon.webp" width="18" alt="Linkdin"></a><br><br></li>
+    </ul>
+    <button><img src="../asserts/img/Raise up.webp" width="20" alt="">&nbsp;Hire Me</button>
+</section>
 
-           <p>Let's collaborate and bring your design visions to life!............</p>
-    </section>
-    <section>
-        <img src="../asserts/age.webp" alt="Age" width="25"><p>Age  |  22 Years</p>
-        <img src="../asserts/location.webp" alt="Age" width="25"><p>Location  |  Kalutara, Sri Lanka</p>
-        <img src="../asserts/contact.webp" alt="Age" width="25"><p>Contact no  |  +94 710 683 601</p>
-        <img src="../asserts/nationallity.webp" alt="Age" width="25"><p>Nationality  |  Sri Lankan</p>
-        <img src="../asserts/language.webp" alt="Age" width="25"><p>Languages  |  English , Sinhala</p>
-        <img src="../asserts/email.webp" alt="Age" width="25"><p>E-mail  |  nipunatheekshana19@gmail.com</p>
-        <button>Download CV</button>
-    </section>
-    <section>
-        <h2>Skills</h2>
-        <button>UI/UX</button>
-        <button>WEB</button>
-        <button>GRAPHIC</button>
-        <p>Adobe Photoshop</p><img src="../asserts/ps_figma.webp" alt="90%" width="500">
-        <p>Figma</p> <img src="../asserts/ps_figma.webp" alt="90%" width="500">
-        <p>Prototyping</p><img src="../asserts/p_p.webp" alt="80%" width="500">
-        <p>Planning & Analytis</p><img src="../asserts/p_p.webp" alt="80%" width="500">
-    </section>
-    <section>
-        <h2 id="gallery">Gallery</h2>
-        <img src="asserts/gallery1.webp" alt="gallery1" width="250">
-        <img src="asserts/gallery2.webp" alt="gallery2" width="250">
-        <img src="asserts/gallery3.webp" alt="gallery3" width="250">
-        <img src="asserts/gallery4.webp" alt="gallery4" width="250">
-        <img src="asserts/gallery5.webp" alt="gallery5" width="250">
-        <img src="asserts/gallery6.webp" alt="gallery6" width="250">
-        <img src="asserts/gallery7.webp" alt="gallery7" width="250">
-        <img src="asserts/gallery8.webp" alt="gallery8" width="250">
-        <img src="asserts/gallery9.webp" alt="gallery9" width="250">
-        <img src="asserts/gallery10.webp" alt="gallery10" width="250">
-    </section>
-</main>
-<footer>
-    <section>
-    <p>Copyright © 2023 All rights reserved</p>
-        <section>
-            <img src="../asserts/Nt Logo footer.webp" alt="Logo">
-            <p>Let's collaborate and bring your
-                design visions to life!............</p>
-            <a href="www.facebook.com"><img src="../asserts/fb_footer.webp" alt="Facebook"></a>
-            <a href="www.whatsapp.com"><img src="../asserts/whatsapp_footer.webp" alt="Whatsapp"></a>
-            <a href="www.instergram.com"><img src="../asserts/insta_footer.webp" alt="Instregram"></a>
-            <a href="www.behance.com"><img src="../asserts/behance_footer.webp" alt="Behance"></a>
-            <a href="www.linkdlin.com"><img src="../asserts/linkedin_footer.webp" alt="Linkdin"></a>
-        </section>
-        <section>
-            <h4>Quick Links</h4>
-            <p>Home</p>
-            <p>About</p>
-            <p>Projects</p>
-            <p>Assignments</p>
-            <p>Contact Me</p>
-        </section>
-        <section>
-            <h4>Services</h4>
-            <p>UI/UX Designs</p>
-            <p>Web Designs</p>
-            <p>Graphic Designs</p>
-        </section>
-        <section>
-            <h4>Contact </h4>
-            <img src="../asserts/location_footer.webp" alt="Location" width="20">
-            <p>Western Province,
-                Sri Lanka.</p>
-            <img src="../asserts/contact_footer.webp" alt="Contact" width="20">
-            <p>+94 710 683 601</p>
-            <img src="../asserts/email_footer.webp" alt="Email" width="20">
-            <p> nipunatheekshana19@gmail.com
-                pixagraphixnt@gmail.com</p>
-        </section>
-    </section>
-</footer>
+<!--About Me Section-->
+
+<section id="aboutme">
+    <img id="about" src="asserts/img/Aboutmetitle.webp" alt="ABOUT ME"><br>
+    <img id="img" src="../asserts/img/Aboutme1.webp" alt="Nipuna Theekshana" width="210">
+
+    <div class="tabtitles">
+        <p class="tablinks activelink" onclick="opentab('bio')">BIO</p>
+        <p class="tablinks" onclick="opentab('edu')">EDUCATION</p>
+        <p class="tablinks" onclick="opentab('exp')">EXPERIENCE</p>
+    </div>
+    <div class="tabcontents activetab" id="bio">
+        <p>Welcome to my website! I'm Nipuna Theekshana, a multi-talented designer <br>
+            specializingz in <b>UI/UX</b>, <b>web design</b>, and <b>graphic design</b>.</p><br><br><br>
+
+        <p> With a keen eye for aesthetics and a dedication to creating intuitive user experiences, I strive <br>
+            to craft visually captivating designs that leave a lasting impact. Whether it's designing <br>
+            seamless interfaces, developing responsive websites, or creating compelling <br>
+            graphics, I bring a blend of creativity and technical expertise to every project. With <br>
+            a collaborative approach and a commitment to excellence,</p><br><br><br>
+
+        <p>Let's collaborate and bring your design visions to life!............</p>
+
+        <table id="table1">
+            <tr>
+                <td><img src="../asserts/img/age.webp" alt="Age" width="25"></td>
+                <td><p><b>Age | </b>22 Years</p></td>
+            </tr>
+            <tr>
+                <td><img src="../asserts/img/location.webp" alt="Age" width="25"></td>
+                <td><p><b>Location | </b>Kalutara, Sri Lanka</p></td>
+            </tr>
+            <tr>
+                <td><img src="../asserts/img/contact.webp" alt="Age" width="25"></td>
+                <td><p><b>Contact no | </b>+94 710 683 601</p></td>
+            </tr>
+        </table>
+        <table id="table2">
+            <tr>
+                <td><img src="../asserts/img/nationallity.webp" alt="Age" width="25"></td>
+                <td><p><b>Nationality | </b>Sri Lankan</p></td>
+            </tr>
+            <tr>
+                <td><img src="../asserts/img/language.webp" alt="Age" width="25"></td>
+                <td><p><b>Languages | </b>English , Sinhala</p></td>
+            </tr>
+            <tr>
+                <td><img src="../asserts/img/email.webp" alt="Age" width="25"></td>
+                <td><p><b>E-mail | </b>nipunatheekshana19@gmail.com</p></td>
+            </tr>
+        </table>
+    </div>
+    <div class="tabcontents education" id="edu">
+        <p>My academic journey has been a cornerstone of my growth and development. <br>I believe in the power of
+            learning
+            and have dedicated myself to acquiring knowledge <br> and honing my skills. Here's a glimpse of my
+            educational
+            <br> background, which has paved the way for my professional journey.</p> <br>
+        <span>2007 - 2019</span>
+        <p>Holy Cross College ,Kalutara (Primary, Middle, Upper School)</p><br>
+
+        <span>2019</span>
+        <p>Certificate course about Information & Communicational technology</p><br>
+
+        <span>2020</span>
+        <p>Diploma in Multimedia & Graphic Designing</p><br>
+
+        <span>2021 - Present</span>
+        <p>Graduate Diploma in Software Engineering</p><br>
+
+        <span>2022 - Present</span>
+        <p>Web Application Development</p><br>
+
+        <span>2023 - Present</span>
+        <p>UI/UX Designing</p>
+    </div>
+    <div class="tabcontents experience" id="exp">
+        <p>Through years of dedicated work and hands-on experience, I've had the <br> privilege of contributing to various
+            projects and organizations. <br> This section showcases my professional journey, highlighting key roles,
+            responsibilities, <br> and achievements that have shaped my career. Explore my work <br> history to gain insights into
+            my expertise and commitment to delivering results.</p> <br>
+        <span>2019 - 2023</span>
+        <p>Graphic Designer in NT Creations</p><br>
+
+        <span>2020 - Present</span>
+        <p>Freelancer in Fiverr</p><br>
+
+        <span>2022</span>
+        <p>Freelancer in Upwork</p><br>
+
+        <span>2023 - Present</span>
+        <p>Graphic Designer in Pixagraphix</p><br>
+
+        <span>2023 - Present</span>
+        <p>Freelancing UI/UX Designing Service</p><br>
+
+        <span>2023 - Present</span>
+        <p>Freelancing Web Application Development</p><br>
+
+
+    </div>
+    <button id="cv"><img src="../asserts/img/icons8-download-64 1.webp" width="28" alt=""> &nbsp; Download CV</button>
+</section>
+<section class="skills">
+    <img id="topic" src="asserts/img/skillstitle.webp" alt="ABOUT ME"><br>
+    <img id="back" src="asserts/img/skill_background.png">
+
+    <div id="first" class="grid-container">
+        <img src="asserts/img/icons8-html-5-150.png">
+        <img src="asserts/img/icons8-css3-150.png">
+        <img src="asserts/img/icons8-javascript-150.png">
+        <img src="asserts/img/icons8-illustrator-120.png" width="60%">
+        <img src="asserts/img/icons8-photoshop-120.png" width="60%">
+    </div>
+    <br><br><br>
+    <div id="second" class="grid-container">
+        <img src="asserts/img/icons8-adobe-indesign-120.png" width="60%">
+        <img src="asserts/img/icons8-figma-144.png">
+        <img src="asserts/img/icons8-java-150.png">
+        <img src="asserts/img/icons8-mysql-150.png">
+        <img src="asserts/img/icons8-intellij-idea-144.png">
+    </div>
+
+    <img id="allicon" src="asserts/img/allskillicon.png">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../asserts/js/particles.js"></script>
+<script type="text/javascript" src="../asserts/js/app.js"></script>
+<script>
+    var tablinks = document.getElementsByClassName("tablinks");
+    var tabcontents = document.getElementsByClassName("tabcontents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("activelink");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink");
+        document.getElementById(tabname).classList.add("activetab")
+    }
+
+
+
+
+
+    var sidemenu = document.getElementById("slidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "-32px";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-900px";
+    }
+
+    window.addEventListener('load',()=>{
+        setTimeout(()=>{
+            const loadingscreen = document.querySelector('.load');
+            loadingscreen.style.display = 'none';
+        },100)
+    })
+    window.addEventListener('load',()=>{
+        setTimeout(()=>{
+            const loadingscreen1 = document.querySelector('.loading-text');
+            loadingscreen1.style.display = 'none';
+        },100)
+    })
+</script>
+
 </body>
 </html>
